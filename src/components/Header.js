@@ -15,7 +15,7 @@ const Header = () => {
     const [price,setPrice] = useState(0);
     // console.log(price);
 
-        const getdata = useSelector((state)=> state.cartreducer.carts);
+        const getdata = useSelector((state)=> state.cart.carts);
         // console.log(getdata);
 
         const dispatch = useDispatch();
@@ -51,9 +51,9 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
                 <Container>
-                    <NavLink to="/" className="text-decoration-none text-light mx-3">Pick your Food</NavLink>
+                    <NavLink to="/" className="text-decoration-none text-light mx-3"><b>Pick your Food</b></NavLink>
                     <Nav className="me-auto">
-                        <NavLink to="/" className="text-decoration-none text-light">Home</NavLink>
+                        <NavLink to="/products" className="text-decoration-none text-light">Other Products</NavLink>
                     </Nav>
 
                     <Badge badgeContent={getdata.length} color="primary"

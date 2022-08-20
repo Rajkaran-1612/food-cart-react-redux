@@ -14,7 +14,6 @@ export const DLT = (id) => {
 }
 
 // remove individual iteam
-
 export const REMOVE = (iteam) => {
     return {
         type: "RMV_ONE",

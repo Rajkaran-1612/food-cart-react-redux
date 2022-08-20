@@ -1,9 +1,10 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import rootred from "./redux/reducers/main";
+import thunk from "redux-thunk";
 
 
 const store = createStore(
-    rootred
+    rootred, applyMiddleware(thunk)
 );
 
 

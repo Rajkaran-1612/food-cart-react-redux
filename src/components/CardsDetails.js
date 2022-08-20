@@ -18,7 +18,7 @@ const CardsDetails = () => {
   const dispatch = useDispatch();
 
   
-  const getdata = useSelector((state)=> state.cartreducer.carts);
+  const getdata = useSelector((state)=> state.cart.carts);
   // console.log(getdata);
 
 
